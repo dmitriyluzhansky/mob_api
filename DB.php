@@ -27,7 +27,7 @@ class DB
                     return $result;
                 }
             } catch (PDOException $e) {
-                $return = "Your fail message: " . $e->getMessage();
+                $return = $query. " Your fail message: " . $e->getMessage();
                 print_r($return);
                 echo '<br>';
             }
